@@ -34,9 +34,7 @@ const HomePage: React.FC<HomeProps> = () => {
   const sanitizedCountriesRegions: string[] | any = useMemo(() => {
     if (!data) return;
 
-    return (
-      [...new Set(data?.map(({ region }: { region: string }) => region))] ?? []
-    );
+    return [...new Set(data?.map(({ region }: { region: string }) => region))];
   }, [data]);
 
   const filteredCountries = useMemo(
