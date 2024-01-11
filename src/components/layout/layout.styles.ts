@@ -32,4 +32,15 @@ export const Header = styled.div`
   z-index: var(--header-z-index);
 `;
 
-export const Navigation = styled.div;
+export const Title = styled.b`
+  cursor: pointer;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.6rem;
+
+  cursor: pointer;
+`;

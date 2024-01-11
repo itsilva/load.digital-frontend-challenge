@@ -12,6 +12,7 @@ export const CountriesListContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: 1fr;
+  grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 
   @media (min-width: 670px) {
@@ -20,7 +21,6 @@ export const CountriesListContainer = styled.div`
 
   @media (min-width: 900px) {
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 2rem;
   }
 
   @media (min-width: 1180px) {
